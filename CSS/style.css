@@ -21,8 +21,8 @@ h3{
     margin-top: 50px;
 }
 .batman_img{
-    width: 500px;
-    height: 500px;
+    width: 40%;
+    height: 45%;
     display: block;
     margin: 0 auto;
     border-left: 5px solid rgb(4, 6, 97);
@@ -46,4 +46,14 @@ body{
 }
 #top{
     text-align: center;
+}
+.list_blablba{
+    list-style-type: none;
+    
+}
+li{
+    display: inline;
+}
+body{
+    background-color: chocolate;
 }
