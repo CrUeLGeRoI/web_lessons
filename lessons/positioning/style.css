@@ -1,0 +1,40 @@
+.special_style{
+    background-color: lightgray;
+    color: red;
+    font-weight: lighter;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border: 5px solid lightgray;
+    border-radius: 12px;
+}
+.item{
+    width: 5%;
+    text-align: center;
+}
+div.static {
+    position: static;
+    border: 3px solid #73AD21;
+    height: 2000px;
+}
+div.fixed {
+    position: fixed;
+    bottom: 0;
+    left: 37px;
+    width: 300px;
+    border: 3px solid #73AD21;
+}
+div.relative {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 3px solid #73AD21;
+}
+  
+div.absolute {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    border: 3px solid #73AD21;
+}

@@ -25,7 +25,7 @@ h1 {
 }
 .menu__item {
   width: 290px;
-  height: 50px;
+  /* height: 50px; */
   background-color: lightgray;
 }
 .menu__item:hover,
