@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    color: #333;
+    line-height: 1.6;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+/* Applying standard styles for divs */
+.about__item{
+    width: 380px;
+    height: 250px;
+    background-color: aqua;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.about__img {
+    width: 380px;
+    height: 250px;
+
+    transition: transform .2s linear;
+    background: linear-gradient(to bottom, #f38181, #fce38a);
+
+    /* Making position of an img to absolute so position of the text is always at the center of the div */
+    position: absolute;
+}
+.about__img img{
+    transition: opacity 0.1s linear;
+    /* Making position of an img to absolute so position of the text is always at the center of the div */
+    position: absolute;
+}
+
+.about__icon, .about__text{
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity .2s linear;
+}
+
+.about__text{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+/* What will user see after hovering on items */
+
+/* Transforming img */
+.about__item:hover .about__img{
+    transform: translate3d(-10px, -10px, 0);
+}
+
+/* Changing opacity of an img so it`s background-color is visible */
+.about__item:hover .about__img img{
+    opacity: 0.2;
+}
+
+/* Changing opacity of an icon and text so that they are visible */
+.about__item:hover .about__text, .about__item:hover .about__icon{
+    opacity: 1;
+}
