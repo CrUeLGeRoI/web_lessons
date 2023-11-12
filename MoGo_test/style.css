@@ -52,13 +52,11 @@ h6 {
     transition: transform .2s linear;
     background: linear-gradient(to bottom, #f38181, #fce38a);
 
-    /* Making position of an img to absolute so position of the text is always at the center of the div */
+    /* Making position of an img to absolute so the text and icon are always at the center of the div */
     position: absolute;
 }
 .about__img img{
-    transition: opacity 0.1s linear;
-    /* Making position of an img to absolute so position of the text is always at the center of the div */
-    position: absolute;
+    transition: opacity .1s linear;
 }
 
 .about__icon, .about__text{

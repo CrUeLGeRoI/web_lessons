@@ -332,14 +332,14 @@ h6 {
   display: flex;
 }
 .stat__item{
-  flex: 1 1 0;
-  border-left: 1px #b5eae0 solid;
+  flex: 1 2 0;
+  /* border-left: 1px #b5eae0 solid; */
   text-align: center;
   color: #fff;
   padding: 70px 25px;
 }
-.stat__item:last-child{
-  border-right: 1px #b5eae0 solid;
+.stat__item:not(:first-child){
+  border-left: 1px #b5eae0 solid;
 }
 .stat__num{
   font-size: 72px;
@@ -362,12 +362,15 @@ h6 {
   padding-bottom: 50px;
   padding-left: 70px;
   position: relative;
+  height: 8%;
 }
+
+.section__service {}
 .section__service:nth-child(-n+3){
   border-bottom: 1px solid #e5e5e5;
 }
 .section__service:nth-child(n+4){
-  padding-top: 45px;
+  margin-top: 45px;
 }
 .service__img:nth-child(-n+3){
   position: absolute;
